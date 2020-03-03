@@ -11,7 +11,7 @@ namespace Calculator.bl
 
         public int Minus(int x, int y)
         {
-            return x - y;
+            return x - y; 
         }
     }
 }
