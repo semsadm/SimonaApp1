@@ -4,5 +4,6 @@ namespace Calculator.bl
 {
     public class Class1
     {
+
     }
 }
