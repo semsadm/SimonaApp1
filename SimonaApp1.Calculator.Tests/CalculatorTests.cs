@@ -6,12 +6,20 @@ namespace Calculator.bl.Tests
     public class CalculatorTests
     {
         [TestMethod]
-        public void TestMethod1()
+        public void Sum_10and20_30returned()
         {
-            public int Sum (int x, int y)
-            {
-                return x + y;
-            }
+            // arrange
+
+            int x = 10;
+            int y = 20;
+            int expected = 30;
+
+            // act
+
+            Calculator c = new Calculator();
+            int actual = c.Sum(x, y);
+
+           // assert
         }
     }
 }
