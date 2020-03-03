@@ -38,6 +38,7 @@ namespace SimonaApp1
                 Console.WriteLine("You exceeded the number of available tries.");
             }
         }
+
         static void Factorial ()
         {
             Console.WriteLine("Enter n>=0");

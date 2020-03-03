@@ -5,7 +5,9 @@ VisualStudioVersion = 16.0.29728.190
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimonaApp1", "SimonaApp1\SimonaApp1.csproj", "{3892EBAF-0DC3-4C17-8BD9-FDD9FB3B2889}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calculator.bl", "Calculator.bl\Calculator.bl.csproj", "{9B15BE8D-D7DD-4713-B5F0-78A2EAB94694}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Calculator.bl", "Calculator.bl\Calculator.bl.csproj", "{9B15BE8D-D7DD-4713-B5F0-78A2EAB94694}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calculator.bl.Tests", "SimonaApp1.Calculator.Tests\Calculator.bl.Tests.csproj", "{1F6BF70F-F215-439C-89AD-CBEA07DDF739}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{9B15BE8D-D7DD-4713-B5F0-78A2EAB94694}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9B15BE8D-D7DD-4713-B5F0-78A2EAB94694}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9B15BE8D-D7DD-4713-B5F0-78A2EAB94694}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F6BF70F-F215-439C-89AD-CBEA07DDF739}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F6BF70F-F215-439C-89AD-CBEA07DDF739}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F6BF70F-F215-439C-89AD-CBEA07DDF739}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F6BF70F-F215-439C-89AD-CBEA07DDF739}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
