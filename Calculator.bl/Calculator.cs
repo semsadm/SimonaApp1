@@ -8,5 +8,10 @@ namespace Calculator.bl
         {
             return x + y;
         }
+
+        public int Minus(int x, int y)
+        {
+            return x - y;
+        }
     }
 }
