@@ -4,12 +4,12 @@ namespace Calculator.bl
 {
     public class Calculator
     {
-       public int Sum(int x, int y)
+       public double Sum(double x, double y)
         {
             return x + y;
         }
 
-        public int Minus(int x, int y)
+        public double Minus(double x, double y)
         {
             return x - y; 
         }
