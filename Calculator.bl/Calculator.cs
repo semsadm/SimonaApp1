@@ -13,5 +13,9 @@ namespace Calculator.bl
         {
             return x - y; 
         }
+        public double Division(double x, double y)
+        {
+            return x / y;
+        }
     }
 }

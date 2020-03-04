@@ -30,6 +30,18 @@ namespace Calculator.bl.Tests
             Assert.AreEqual(expected, actual);
         }
 
+        [DataTestMethod]
+        [DataRow(1, 1, 1)]
+        [DataRow(30, 10, 3)]
+        [DataRow(14, 7, 2)]
+        [DataRow(-4, 2, -2)]
+        public void Division_Using_DataRow(double a, double b, double expected)
+        {
+            Calculator calculator = new Calculator();
+            var actual = calculator.Division(a, b);
+            Assert.AreEqual(expected, actual);
+        }
+
     }
 
 }
