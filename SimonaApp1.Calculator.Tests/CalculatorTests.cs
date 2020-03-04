@@ -18,8 +18,24 @@ namespace Calculator.bl.Tests
             Assert.AreEqual(expected, actual);
         }
 
+        [DataTestMethod]
+        [DataRow(1, 1, 0)]
+        [DataRow(30, 10, 20)]
+        [DataRow(14, 1, 13)]
+        [DataRow(-1, 1, -2)]
+        public void Minus_Using_DataRow(double a, double b, double expected)
+        {
+            Calculator calculator = new Calculator();
+            var actual = calculator.Minus(a, b);
+            Assert.AreEqual(expected, actual);
+        }
+
     }
+
 }
+
+
+
   //  {
         //[TestMethod]
         //public void Sum_10and20_30returned()
