@@ -22,5 +22,10 @@ namespace Calculator.bl
         {
             return x * y;
         }
+
+        public double Squaring(double x)
+        {
+            return x * x;
+        }
     }
 }

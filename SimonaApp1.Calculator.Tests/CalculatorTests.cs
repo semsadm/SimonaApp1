@@ -53,6 +53,18 @@ namespace Calculator.bl.Tests
             var actual = calculator.Multiplication(a, b);
             Assert.AreEqual(expected, actual);
         }
+
+        [DataTestMethod]
+        [DataRow(2, 4)]
+        [DataRow(-5, 25)]
+        [DataRow(-999, 998001 )]
+        [DataRow(0, 0)]
+        public void Squaring_Using_DataRow(double a, double expected)
+        {
+            Calculator calculator = new Calculator();
+            var actual = calculator.Squaring(a);
+            Assert.AreEqual(expected, actual);
+        }
     }
 
 }
