@@ -27,5 +27,11 @@ namespace Calculator.bl
         {
             return x * x;
         }
+
+        public double Sqrt(double x)
+        {
+            double v = Math.Sqrt(x);
+            return v;
+        }
     }
 }
