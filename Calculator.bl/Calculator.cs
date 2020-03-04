@@ -17,5 +17,10 @@ namespace Calculator.bl
         {
             return x / y;
         }
+
+        public double Multiplication(double x, double y)
+        {
+            return x * y;
+        }
     }
 }

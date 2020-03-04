@@ -32,9 +32,9 @@ namespace Calculator.bl.Tests
 
         [DataTestMethod]
         [DataRow(1, 1, 1)]
-        [DataRow(30, 10, 3)]
-        [DataRow(14, 7, 2)]
-        [DataRow(-4, 2, -2)]
+        [DataRow(30.5, 10, 3.05)]
+        [DataRow(385, -7, -55)]
+        [DataRow(-4.55, 2, -2.275)]
         public void Division_Using_DataRow(double a, double b, double expected)
         {
             Calculator calculator = new Calculator();
@@ -42,6 +42,17 @@ namespace Calculator.bl.Tests
             Assert.AreEqual(expected, actual);
         }
 
+        [DataTestMethod]
+        [DataRow(1, 1, 1)]
+        [DataRow(48.5, 0, 0)]
+        [DataRow(-999, 99.9, -99800.1)]
+        [DataRow(-0.55, -2, 1.1)]
+        public void Multiplication_Using_DataRow(double a, double b, double expected)
+        {
+            Calculator calculator = new Calculator();
+            var actual = calculator.Multiplication(a, b);
+            Assert.AreEqual(expected, actual);
+        }
     }
 
 }
