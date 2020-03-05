@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Calculator.bl;
+using System;
 using System.Collections.Generic;
 using System.Globalization;
 using System.Threading;
@@ -9,6 +10,16 @@ namespace SimonaApp1
     {
         static void Main(string[] args)
         {
+            var calculator = new Calculator.bl.Calculator(2);
+
+            try
+            {
+                var result = calculator.Division(1, 0);
+            }
+            catch (ArgumentException ex)
+            {
+                Console.WriteLine("Не надо делить на 0");
+            }
             
         }
 

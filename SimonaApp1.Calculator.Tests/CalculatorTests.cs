@@ -1,4 +1,6 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System;
+using System.IO;
 
 namespace Calculator.bl.Tests
 {
@@ -6,15 +8,18 @@ namespace Calculator.bl.Tests
     public class CalculatorTests
 
     {
+        #region Summ
         [DataTestMethod]
         [DataRow(1, 1, 2)]
         [DataRow(12, 30, 42)]
         [DataRow(14, 1, 15)]
         [DataRow(-1, 1, 0)]
-        public void Sum_Using_DataRow(double a, double b, double expected)
+        public void Sum_Using_DataRow(double right, double left, double expected)
         {
             Calculator calculator = new Calculator(8);
-            var actual = calculator.Sum(a, b);
+
+            var actual = calculator.Sum(right, left);
+
             Assert.AreEqual(expected, actual);
         }
 
@@ -29,17 +34,28 @@ namespace Calculator.bl.Tests
             var actual = calculator.Minus(a, b);
             Assert.AreEqual(expected, actual);
         }
+        #endregion
 
         [DataTestMethod]
         [DataRow(3.34, 3, 1.11333333)]
         [DataRow(30.5, 10, 3.05)]
         [DataRow(385, -7, -55)]
-        [DataRow(-4.55, 2, -2.275)]
+        [DataRow(-4.55, 0, -2.275)]
         public void Division_Using_DataRow(double a, double b, double expected)
         {
             Calculator calculator = new Calculator(8);
             var actual = calculator.Division(a, b);
             Assert.AreEqual(expected, actual);
+        }
+
+        [TestMethod]
+        [ExpectedException(typeof(ArgumentException))]
+        public void DivisionException()
+        {
+            Calculator calculator = new Calculator(8);
+
+            var actual = calculator.Division(1, 0);
+
         }
 
         [DataTestMethod]
