@@ -13,7 +13,7 @@ namespace Calculator.bl.Tests
         [DataRow(-1, 1, 0)]
         public void Sum_Using_DataRow(double a, double b, double expected)
         {
-            Calculator calculator = new Calculator();
+            Calculator calculator = new Calculator(8);
             var actual = calculator.Sum(a, b);
             Assert.AreEqual(expected, actual);
         }
@@ -25,19 +25,19 @@ namespace Calculator.bl.Tests
         [DataRow(-1, 1, -2)]
         public void Minus_Using_DataRow(double a, double b, double expected)
         {
-            Calculator calculator = new Calculator();
+            Calculator calculator = new Calculator(8);
             var actual = calculator.Minus(a, b);
             Assert.AreEqual(expected, actual);
         }
 
         [DataTestMethod]
-        [DataRow(1, 1, 1)]
+        [DataRow(3.34, 3, 1.11333333)]
         [DataRow(30.5, 10, 3.05)]
         [DataRow(385, -7, -55)]
         [DataRow(-4.55, 2, -2.275)]
         public void Division_Using_DataRow(double a, double b, double expected)
         {
-            Calculator calculator = new Calculator();
+            Calculator calculator = new Calculator(8);
             var actual = calculator.Division(a, b);
             Assert.AreEqual(expected, actual);
         }
@@ -49,7 +49,7 @@ namespace Calculator.bl.Tests
         [DataRow(-0.55, -2, 1.1)]
         public void Multiplication_Using_DataRow(double a, double b, double expected)
         {
-            Calculator calculator = new Calculator();
+            Calculator calculator = new Calculator(8);
             var actual = calculator.Multiplication(a, b);
             Assert.AreEqual(expected, actual);
         }
@@ -61,7 +61,7 @@ namespace Calculator.bl.Tests
         [DataRow(0, 0)]
         public void Squaring_Using_DataRow(double a, double expected)
         {
-            Calculator calculator = new Calculator();
+            Calculator calculator = new Calculator(8);
             var actual = calculator.Squaring(a);
             Assert.AreEqual(expected, actual);
         }
@@ -73,7 +73,7 @@ namespace Calculator.bl.Tests
         [DataRow(9801, 99)]
         public void Sqrt_Using_DataRow(double a, double expected)
         {
-            Calculator calculator = new Calculator();
+            Calculator calculator = new Calculator(8);
             var actual = calculator.Sqrt(a);
             Assert.AreEqual(expected, actual);
         }
