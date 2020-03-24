@@ -10,10 +10,16 @@ namespace SimonaApp1
     {
         static void Main(string[] args)
         {
-            //var options = new RoundOptions(4, MidpointRounding.AwayFromZero);
-            //var calculator = new Calculator.bl.Calculator(options);
+            var generator = new Generator();
+            generator.StateChanged += Generator_StateChanged;
+
+           generator.Ogon();
         }
 
+        private static void Generator_StateChanged(object sender, State e)
+        {
+            throw new NotImplementedException();
+        }
 
         static void Login ()
 
